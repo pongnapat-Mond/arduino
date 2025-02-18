@@ -1,8 +1,8 @@
 #include <Servo.h>
 
 // Define pins for the ultrasonic sensor
-const int trigPin = 9;
-const int echoPin = 10;
+const int trigPin = 12;
+const int echoPin = 11;
 
 // Define servo object and pin
 Servo myServo;
