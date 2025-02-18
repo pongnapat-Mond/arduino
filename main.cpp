@@ -1,19 +1,19 @@
 #include <Servo.h>
 
-// Define pins for the ultrasonic sensor
+
 const int trigPin = 12;
 const int echoPin = 11;
 
-// Define servo object and pin
+
 Servo myServo;
 
 
-// Variables for distance calculation
+
 long duration;
 int distance;
 
 void setup() {
-    // Set pin modes
+    
     pinMode(trigPin, OUTPUT);
     pinMode(echoPin, INPUT);
 
@@ -32,10 +32,10 @@ void loop() {
     delayMicroseconds(10);
     digitalWrite(trigPin, LOW);
 
-    // Read the echo pin
+   
     duration = pulseIn(echoPin, HIGH);
 
-    // Calculate disltance (in cm)
+   
     distance = (duration/2) / 29.1;
 
     
